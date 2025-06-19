@@ -1,0 +1,20 @@
+<div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10">
+  <h1 class="text-4xl font-extrabold mb-8 text-center text-gray-800"><%= @plan["title"] %></h1>
+
+  <% @plan["weeks"].each do |week| %>
+  <section class="mb-10 border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <h2 class="text-2xl font-semibold mb-4 text-indigo-700">Week <%= week["week"] %></h2>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+      <% week["days"].each do |day| %>
+      <% day.each do |day_name, activity| %>
+      <li><span class="font-semibold"><%= day_name %>:</span> <%= activity %></li>
+      <% end %>
+      <% end %>
+    </ul>
+  </section>
+  <% end %>
+
+  <div class="text-center mt-8">
+    <%= link_to "Generate Another Plan", root_path, class: "inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition" %>
+  </div>
+</div>

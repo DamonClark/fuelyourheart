@@ -1,0 +1,14 @@
+<div class="max-w-4xl mx-auto mt-12 p-8 bg-white rounded-lg shadow-lg">
+  <h1 class="text-3xl font-bold mb-6 text-gray-800">Editing: <%= @file_key.humanize %></h1>
+
+  <%= form_with url: admin_training_plans_update_path(file_key: @file_key), method: :patch, local: true do %>
+  <div class="mb-6">
+    <%= text_area_tag :yaml_content, @yaml_content, rows: 30, class: "w-full font-mono text-sm border border-gray-300 rounded-lg p-4 resize-y shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" %>
+  </div>
+
+  <div class="flex items-center space-x-4">
+    <%= submit_tag "Save Changes", class: "bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-200" %>
+    <%= link_to "Back", admin_training_plans_path, class: "text-gray-600 hover:text-gray-900 underline" %>
+  </div>
+  <% end %>
+</div>

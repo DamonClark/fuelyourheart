@@ -1,0 +1,38 @@
+title: "Hyrox Intermediate - 3 Days/Week"
+weeks:
+  - week: 1
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Tempo Run 4 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (400m x 6)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 5 miles"
+  - week: 2
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Tempo Run 5 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (400m x 8)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 6 miles"
+  - week: 3
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Tempo Run 5 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (400m x 10)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 7 miles"
+  - week: 4
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Tempo Run 6 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (400m x 12)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 7 miles"

@@ -1,0 +1,38 @@
+title: "Hyrox Beginner - 3 Days/Week"
+weeks:
+  - week: 1
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Easy Run 2 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (30s x 6)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 3 miles"
+  - week: 2
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Easy Run 2.5 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (30s x 8)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 4 miles"
+  - week: 3
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Easy Run 3 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (45s x 6)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 4 miles"
+  - week: 4
+    days:
+      - Monday: "Rest"
+      - Tuesday: "Easy Run 3 miles"
+      - Wednesday: "Strength Training"
+      - Thursday: "Rest"
+      - Friday: "Intervals (45s x 8)"
+      - Saturday: "Rest"
+      - Sunday: "Long Run 5 miles"
