@@ -1,9 +1,13 @@
-<h1 class="text-3xl font-bold mb-6">Training Plans Admin</h1>
+<div class="max-w-2xl mx-auto px-4 py-8">
+  <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-6 text-center">
+    Training Plans Admin
+  </h1>
 
-<ul class="list-disc pl-5 space-y-2">
-  <% @plans.each do |plan_key| %>
-  <li>
-    <%= link_to plan_key.humanize, admin_training_plans_edit_path(file_key: plan_key), class: "text-blue-600 hover:underline" %>
-  </li>
-  <% end %>
-</ul>
+  <ul class="list-disc pl-5 space-y-4">
+    <% @plans.each do |plan_key| %>
+    <li>
+      <%= link_to plan_key.humanize, admin_training_plans_edit_path(file_key: plan_key), class: "text-blue-600 hover:text-blue-800 hover:underline text-lg transition" %>
+    </li>
+    <% end %>
+  </ul>
+</div>
