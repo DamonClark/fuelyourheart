@@ -1,22 +1,33 @@
-<div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded shadow">
-  <h1 class="text-2xl font-bold mb-6 text-center">Generate Your Training Plan</h1>
+<div class="max-w-xl mx-auto mt-10 p-6">
+  <h1 class="text-3xl font-bold mb-6 text-center">
+    Let’s Build Your Custom Hyrox Plan 🏋️‍♀️
+  </h1>
+  <p class="text-center text-gray-600 mb-6">
+    Created by Amy Brown — Coach. Hyrox World Champ. Runner. Heart-led Athlete.
+  </p>
+  <h1 class="text-2xl font-bold mb-4 text-center">Generate Your Training Plan</h1>
 
   <%= form_with url: "/plans", method: :post, local: true do %>
   <div class="mb-4">
     <label class="block font-medium mb-1">Goal:</label>
-    <%= select_tag :goal, options_for_select([['Hyrox', 'hyrox']]), class: "border border-gray-300 rounded w-full p-2" %>
+    <%= select_tag :goal, options_for_select([['Hyrox', 'hyrox']]), class: "w-full border p-2 rounded" %>
   </div>
 
   <div class="mb-4">
     <label class="block font-medium mb-1">Level:</label>
-    <%= select_tag :level, options_for_select([['Beginner', 'beginner'], ['Intermediate', 'intermediate']]), class: "border border-gray-300 rounded w-full p-2" %>
+    <%= select_tag :level, options_for_select([['Beginner', 'beginner'], ['Intermediate', 'intermediate']]), class: "w-full border p-2 rounded" %>
+  </div>
+
+  <div class="mb-4">
+    <label class="block font-medium mb-1">Days per Week:</label>
+    <%= select_tag :days, options_for_select((3..5).to_a), class: "w-full border p-2 rounded" %>
   </div>
 
   <div class="mb-6">
-    <label class="block font-medium mb-1">Days per Week:</label>
-    <%= select_tag :days, options_for_select((3..5).to_a), class: "border border-gray-300 rounded w-full p-2" %>
+    <label class="block font-medium mb-1">Email Address:</label>
+    <%= email_field_tag :email, nil, class: "w-full border p-2 rounded", required: true %>
   </div>
 
-  <%= submit_tag "Generate Plan", class: "w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition" %>
+  <%= submit_tag "Generate My Hyrox Plan 💪", class: "w-full bg-[#EF476F] hover:bg-[#e53e64] text-white font-bold py-3 px-6 rounded shadow-md transition" %>
   <% end %>
 </div>
